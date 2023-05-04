@@ -37,11 +37,32 @@ Potential Improvements:
 7. Implementing caching or other optimization techniques to speed up the data retrieval process.
 
 
+Upkeep of program and Simplification for non-devs:
+
+To ensure accuracy of data over time, it is important to regularly update the data and to account for changes to the data schema. The PyGitHub API can be used to retrieve the most up-to-date data, and versioning can be used to account for changes to the API.
+
+In addition, data cleaning and validation can be performed to ensure that the data is consistent and accurate. This could involve removing duplicate entries, verifying that the data is in the expected format, and checking for outliers.
+
+What you can do to make the output usable by an audience of non-technical consumers:
+
+To make the output usable by non-technical consumers, the data should be presented in a clear and concise manner. This could involve using charts or graphs to visualize the data, or presenting the data in a table with clear headings and descriptions.
+
+It is also important to provide context for the data, such as explaining what each metric represents and how it relates to developer productivity.
+
 
 How I Approached the Problem:
 
-I started by reviewing the requirements and identifying the key metrics that I would need to retrieve from the GitHub API. I then researched the PyGitHub package and familiarized myself with its capabilities.
+I started by reviewing the requirements and identifying the key metrics that I would need to retrieve from the GitHub API. I then researched the PyGitHub package and familiarized myself with its capabilitie
+Upkeep of program and Simplification for non-devs:
+To ensure accuracy of data over time, it is important to regularly update the data and to account for changes to the data schema. The PyGitHub API can be used to retrieve the most up-to-date data, and versioning can be used to account for changes to the API.
 
+In addition, data cleaning and validation can be performed to ensure that the data is consistent and accurate. This could involve removing duplicate entries, verifying that the data is in the expected format, and checking for outliers.
+
+What you can do to make the output usable by an audience of non-technical consumers:
+
+To make the output usable by non-technical consumers, the data should be presented in a clear and concise manner. This could involve using charts or graphs to visualize the data, or presenting the data in a table with clear headings and descriptions.
+
+It is also important to provide context for the data, such as explaining what each metric represents and how it relates to developer productivity.
 Initially, I planned to retrieve all the required data using the get_contributors_stats() method provided by PyGitHub. However, I soon realized that this method only provides high-level statistics for the entire repository, rather than detailed metrics for individual developers.
 
 As a result, I pivoted my approach and decided to retrieve the required data by making calls to the GitHub API using PyGitHub's get_user() and get_repo() methods. This allowed me to retrieve more detailed metrics for individual developers, which could then be aggregated and presented in a more meaningful way.
@@ -49,3 +70,6 @@ As a result, I pivoted my approach and decided to retrieve the required data by 
 One interesting technical aspect of the solution is the use of PyGitHub's pagination feature to retrieve large volumes of data in a more efficient manner. This involved making multiple requests to the GitHub API and iterating over the results until all the required data had been retrieved.
 
 Another interesting design aspect is the use of a scoring system to assign weights to the different metrics based on their relative importance. This allowed me to calculate an overall productivity score for each developer, which could then be used to compare their contributions to the repository.
+
+
+
