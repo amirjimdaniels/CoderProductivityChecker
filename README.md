@@ -1,5 +1,4 @@
 # testRepo
-Repository for G-Research technical challenge
 
 Instructions:
 1. Download the testPython.py file from the repository.
