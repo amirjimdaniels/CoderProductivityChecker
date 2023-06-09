@@ -55,11 +55,12 @@ I started by reviewing the requirements and identifying the key metrics that I w
 Upkeep of program and Simplification for non-devs:
 To ensure accuracy of data over time, it is important to regularly update the data and to account for changes to the data schema. The PyGitHub API can be used to retrieve the most up-to-date data, and versioning can be used to account for changes to the API.
 
-In addition, data cleaning and validation can be performed to ensure that the data is consistent and accurate. This could involve removing duplicate entries, verifying that the data is in the expected format, and checking for outliers.
 
 What you can do to make the output usable by an audience of non-technical consumers:
 
 To make the output usable by non-technical consumers, the data should be presented in a clear and concise manner. This could involve using charts or graphs to visualize the data, or presenting the data in a table with clear headings and descriptions.
+
+In addition, data cleaning and validation can be performed to ensure that the data is consistent and accurate. This could involve removing duplicate entries, verifying that the data is in the expected format, and checking for outliers.
 
 It is also important to provide context for the data, such as explaining what each metric represents and how it relates to developer productivity.
 Initially, I planned to retrieve all the required data using the get_contributors_stats() method provided by PyGitHub. However, I soon realized that this method only provides high-level statistics for the entire repository, rather than detailed metrics for individual developers.
