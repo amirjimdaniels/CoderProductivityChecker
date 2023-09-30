@@ -17,6 +17,7 @@ class Developer:
         self.num_linesAdded = 0
         self.num_linesDeleted = 0
         self.devRanking = None
+        self.score = 0
 
 
 
@@ -63,7 +64,7 @@ for developer_name, developer_obj in developers.items():
           f"{developer_obj.num_linesDeleted} lines deleted.")
 
     
-score = 0
+
 
 # Generate MVP
 for developer_name, developer_obj in developers.items():
